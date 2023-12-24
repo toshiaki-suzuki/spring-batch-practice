@@ -29,6 +29,8 @@ public class SampleReader implements ItemReader<String> {
 			
 			return message;
 		}
+		// ジョブはステップがnullを返却した時に終了する
+		// すべての要素を読み込んだらnullを返す
 		return null;
 	}
 }
